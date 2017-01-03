@@ -1,0 +1,269 @@
+/* --------------- reset.css --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, , em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	
+	border: 0;
+	outline: 0;                               /* обнул€ем отступы и убираем бордюры */
+	vertical-align: baseline;          /* приводим все к одной базовой линии */
+	background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+	font-size: 100%;                     /* размер шрифта всем одинаковый */
+}
+a {                                      	     /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+	outline:none;
+	color: 60b5ed;
+}
+table {						/* устран€ем отступы между €чейками таблицы */
+	border-collapse: collapse; 
+	border-spacing: 0;
+}
+td, td img {
+	vertical-align: top;			/* возвращаем привычное вертикальное выравнивание */
+} 
+input, select, button, textarea {
+	margin: 0; 				/* убираем отступы по умолчанию дл€ элементов форм (в частности дл€ checkbox и radio) */
+	font-size: 100%; 			/* делаем размер шрифтов везде одинаковым */
+	outline: none;
+}
+input[type="text"], input[type="password"], textarea {
+	padding: 0; 				/* убираем внутренние отступы дл€ текстовых полей */
+}
+input[type="checkbox"] { 		/* вертикальное выравнивание чекбоксов и радиобатонов относительно меток */
+	vertical-align: bottom;
+}
+input[type="radio"] {
+	vertical-align: text-bottom;
+}
+sub {
+	vertical-align: sub;
+	font-size: smaller;
+}
+sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+nav ul {
+	 list-style:none;
+}
+
+
+/* --------------- базовые настройки ---------*/
+html {
+	min-height:100%; /* всегда показываем вертикальную полосу прокрутки  */
+}
+body {
+	color: #c0c0c0;
+	text-align: left;
+	font-size: 1em; /* используем безопасные шрифтовые CSS стеки */
+	min-height:100%;
+	font-family: Helvetica Neue, Tahoma, 'Open Sans', sans-serif;
+}
+
+a:focus, a:active {
+	color: #c83867;
+	text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight:normal;
+}
+img{
+	max-width:100%;
+}
+.clear{
+	clear:both;
+}
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+/* ------------------------- haeder --------------------------*/
+body{ 
+	background-color: #c0c0c0;
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica Neue, Tahoma, Arial, sans-serif;
+}
+.block-main-center{
+	margin: 0 auto;
+	max-width: 960px;
+	height: 800px;
+	background-image: url(images/backgraund.jpg);
+	-moz-background-size: 100%;
+	-webkit-background-size: 100%;
+	-0-background-size: 100%;
+	background-size: cover;
+	position: relative;
+	/*box-shadow: 0 0 10px rgba(0,0,0,0.9);*/
+}
+
+.header{
+	margin: 0;
+	width: 100%;
+}
+.header-menu {
+	margin: 0;
+	background-color: #074b88;
+	position: absolute;  
+	width: 960px;	
+	top: 0;
+    /*box-shadow: 0 0 6px rgba(0,0,0,0.5);*/
+}
+.header-menu ul{
+	float: left;
+	list-style: none;
+	padding-left: 10%;
+	position: repeat-x;
+	
+}
+.li-border-right{
+	border-right: 1px solid #4eabda;
+	border-spacing: 0 9px;
+}
+
+.header-menu ul li {
+	float: left;
+	padding: 0px 0px;
+    margin: -15px 0;	
+}
+.header-menu a{
+	
+}
+.header-menu a{ 
+	padding: 15px 15px;
+	display: block;
+	float: left;
+	color: #60b5ed;
+	text-align: center;
+	text-decoration: none;
+	font-family: Helvetica Neue, Tahoma, verdana, arial, sans-serif;
+}
+
+.header-menu a:hover {
+	text-decoration: ;
+	background-color: #4eabda;
+	color: #fff;
+}
+.block-info{
+	float: right;
+	position: relative;
+	padding-right: 15px;
+}
+.block-info a, p{
+	color: #fff;
+}
+.info-flag{
+	float: left;
+	padding: 0px 10px;
+}
+.info-flag img{
+	vertical-align: middle;
+	padding: 0 10px;
+	margin-top: -3px;
+}
+.info-ola{
+	margin: 0;
+	float: left;
+	background-color: #307dc6;
+	padding: 1em;
+}
+.block-info img{
+	vertical-align: middle;
+}
+/* ------------------------- content --------------------------*/
+
+
+.content{
+	width: 400px;
+	height: 600px;
+	background-color: rgba(14, 13, 20, 0.8);
+	position: absolute;
+	top: 17%;
+	left: 50%;
+	height: %;
+	width: 50%;
+	margin: -15px 0 0 -25%;
+	text-align: center;
+}
+.cadastre-center{
+	width: 300px;
+	margin: 0 auto;
+}
+.cadastre-center p{
+	text-align: center;
+}
+.cadastre-center img{
+	width: 300px;
+}
+/* ============================== forma ============================ */
+
+.first{
+	display: block;
+	margin-top: 20px;
+	width: 300px;
+	border: none;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #484948;
+	/*border: 2px solid #aded59;*/
+	/*border-radius: 16px;*/
+	padding: 5px 10px !important;
+	margin-left: -10px;
+	background: #100f0f;
+	color: #fff !important;
+	font-weight: 500;
+	/*box-shadow:  0 0 5px 2px #4680ab; */ 
+}
+.first:focus{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #689bcc;
+	background: #1b5288;
+	box-shadow:  0 0 5px 2px #4680ab; 
+}
+
+/* ======================== горизонтальная линия ==================== */
+.center{
+	margin: 0 auto;
+	text-align: center;
+}
+.lntxt{	
+	overflow: hidden;
+}
+.lntxt:after,.center:before{
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	box-sizing: border-box;
+	width: 100%;
+	height: 1px;
+	backgraund: rgb(230, 235, 235);
+	border: solid #666;
+	border-width: 0 10.75em 0; 
+}
+
+.lntxt:before{
+	margin-left: -100%;
+}
+.lntxt:after{
+	margin-right: -100%;
+}
+.button-style{
+	margin-top: 20px;
+	padding: 10px;
+	color: #fff;
+	background-color: #398bcc;
+	border: none;
+	border-radius: 6px;
+}
+
+
+
+

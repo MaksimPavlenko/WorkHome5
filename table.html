@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8"> 
+		<title>table-Пита Мондриан</title>
+	</head>
+	
+	<style>
+		table{
+			border-collapse: collapse;
+			margin: 0 auto;
+			height: 50px;
+		}
+		.table-top{		
+			/*border-top-color: #fff;*/
+			border-bottom-color: #000;
+			border-bottom-style: solid;
+			border-bottom-width: 10px;		
+		}
+		.table-right{
+			border-right-color: #000;
+			border-right-style: solid;
+			border-right-width: 10px;	
+		}		
+		.td11{
+			height: 45px;
+			width: 100px;
+		}
+		.td14{
+			background-color: #fff254;
+			width: 180px;
+		}
+		.td23{
+			width: 180px;
+			height: 130px;
+			border-left-color: #000;
+			border-left-style: solid;
+			border-left-width: 10px;
+			background-color: #fff254;
+		}
+		.td21{
+			
+		}
+		.td22{
+			background-color: #ff5f3b;
+			width: 272px;
+			height: 160px;
+			border-left-color: #000;
+			border-left-style: solid;
+			border-left-width: 10px;
+		}
+		.td31{
+			width: 52px;
+			background-color: #fff;
+			border-right-color: #000;
+			border-right-style: solid;
+			border-right-width: 10px;
+		}
+		.td33{
+			background-color: #fff;
+			height: 125px;
+			border: 10px solid #000;
+			border-left: none;
+			border-bottom: none;
+		}
+		.td41{
+			width: 47px;
+			background-color: #fff;
+			border-right-color: #000;
+			border-right-style: solid;
+			border-right-width: 10px;
+			border-bottom-color: #000;
+			border-bottom-style: solid;
+			border-bottom-width: 10px;
+		}
+		.td42{
+			background-color: #2b2121;
+			width: 100px;
+			height: 40px;
+			border: 10px solid #000;
+			border-left: none;			
+		}
+		.td43{
+			width: 140px;
+			border: 10px solid #000;		
+		}
+		.td44{
+			background-color: #fff;
+			width: 175px;
+			height: 40px;
+			border: 10px solid #000;
+			border-left: none;
+			border-right: none;
+		}
+		.td51{
+			background-color: #fff254;
+		}
+		.td53{
+			width: ;
+			height: 40px;
+			background-color: #fff;
+			border-right-color: #000;
+			border-right-style: solid;
+			border-right-width: 10px;
+			border-bottom-color: #000;
+			border-bottom-style: solid;
+			border-bottom-width: 10px;
+		}
+		.td54{
+			background-color: #004482;
+			border-bottom-color: #000;
+			border-bottom-style: solid;
+			border-bottom-width: 10px;
+		}
+		.td61{
+			width: 120px;
+			background-color: #fff;
+			border: 10px solid #000;
+			border-top: none;
+			border-bottom: none;			
+		}
+		.td62{
+			height: 25px;
+			background-color: #2b2121;
+			border: 10px solid #000;
+			border-top: none;
+			border-left: none;
+		}
+		
+	</style>
+	<body>
+		<table class="table">
+			<table cellspacing="0"; class="table-top">
+				<tr class="td11">
+					<td class="table-right" style="width: 115px"><!-- Ячейка 11--></td>
+					<td colspan="2"; class="table-right" style="width: 209px"><!-- Ячейка 12 --> </td>
+					<!-- <td>Ячейка 13</td> -->
+					<td class="td14";><!-- Ячейка 14 --> </td>
+				</tr>
+			</table>
+			<table cellspacing="0";>
+				<tr >
+					<td class="table-top"  style= "height: 100px" width="45px";><!-- Ячейка 21 --></td>
+					<td rowspan="2"; class="td22" ><!-- Ячейка 22 --></td>
+					<td colspan="2"; class="td23"><!--Ячейка 23 --></td>
+					<!-- <td>Ячейка 24</td> -->
+				</tr>
+				<tr>
+					<td rowspan="2" class="td31"><!-- Ячейка 31 --></td>
+					<!-- <td>Ячейка 32</td> -->
+					<td class="td33" style=""><!--Ячейка 33 --></td>
+					<td><!-- Ячейка 34 --></td>
+				</tr>
+				<table>
+					<tr>
+						<td colspan="0" class="td41"><!-- Ячейка 41 --></td>
+						<td rowspan="2" class="td42"><!-- Ячейка 42 --></td>
+						<td class="td43"><!-- Ячейка 43 --></td>
+						<td class="td44"><!-- Ячейка 44 --></td>
+					</tr>
+					<tr>
+						<td rowspan="3" class="td51"><!-- Ячейка 51 --></td>
+						<!-- <td>Ячейка 52</td> -->
+						<td class="td53"><!-- Ячейка 53 --></td>
+						<td rowspan="2" class="td54"><!-- Ячейка 54 --></td>
+					</tr>
+					<tr>
+						<td rowspan="2" class="td61"><!-- Ячейка 61 --></td>
+						<td class="td62"><!-- Ячейка 62 --></td>
+						<!-- <td class="">Ячейка 63</td> -->
+						<!-- <td>Ячейка 64</td> -->				
+					</tr>
+					<tr>
+						<!-- <td>Ячейка 71</td> -->
+						<!-- <td>Ячейка 72</td> -->
+						<!-- <td>Ячейка 73</td> -->
+						<td style="height: 15px"><!-- Ячейка 74 --></td>
+					</tr>
+				</table>
+			</table>
+		</table>
+	</body>
+</html>
